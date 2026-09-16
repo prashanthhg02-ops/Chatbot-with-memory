@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hello! I am Memo, your memory-aware AIML chatbot.</template>
+  </category>
+  <category>
+    <pattern>HI</pattern>
+    <template>Hi there. What would you like to talk about?</template>
+  </category>
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>I'm running smoothly and keeping track of our conversation.</template>
+  </category>
+  <category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>I can remember that from our conversation.</template>
+  </category>
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Nice to meet you, <star/>.</template>
+  </category>
+  <category>
+    <pattern>CALL ME *</pattern>
+    <template>Got it. I will call you <star/>.</template>
+  </category>
+  <category>
+    <pattern>MY FAVORITE IS *</pattern>
+    <template>That sounds like a great favorite.</template>
+  </category>
+  <category>
+    <pattern>WHAT CAN YOU DO</pattern>
+    <template>I can chat using AIML rules and remember details you share, like your name and favorite thing.</template>
+  </category>
+  <category>
+    <pattern>HELP</pattern>
+    <template>Say hello, tell me your name, or tell me your favorite thing. You can also ask what I remember.</template>
+  </category>
+  <category>
+    <pattern>BYE</pattern>
+    <template>See you next time. I will keep your saved memories.</template>
+  </category>
+</aiml>

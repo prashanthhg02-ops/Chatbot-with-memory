@@ -1,0 +1,2 @@
+Flask>=3.1,<4
+python-aiml>=0.9.3

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memo | AIML with memory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark"><span class="brand-dot"></span><span>MEMO</span></div>
+      <div class="status"><span class="status-dot"></span>AIML online</div>
+    </header>
+    <section class="workspace">
+      <aside class="memory-panel">
+        <p class="eyebrow">Long-term memory</p>
+        <h1>A conversation<br><em>that sticks.</em></h1>
+        <p class="intro">Memo learns the small details you share and brings them back when you return.</p>
+        <div class="memory-list">
+          <div class="memory-item"><span class="memory-icon">@</span><div><small>YOUR NAME</small><strong id="saved-name">Not saved yet</strong></div></div>
+          <div class="memory-item"><span class="memory-icon">*</span><div><small>FAVORITE THING</small><strong id="saved-favorite">Not saved yet</strong></div></div>
+        </div>
+        <button class="reset-button" id="reset-button" type="button">Clear my memory</button>
+      </aside>
+      <section class="chat-panel">
+        <div class="chat-header"><div><p class="eyebrow">Your private chat</p><h2>Talk to Memo</h2></div><span class="rule-count">10 AIML rules</span></div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+        <form class="composer" id="chat-form"><input id="message-input" autocomplete="off" placeholder="Tell Memo something..." aria-label="Message Memo"><button aria-label="Send message" type="submit">Send <span>↗</span></button></form>
+      </section>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
